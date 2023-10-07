@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'linear-gradient(180deg, #0000008c 0%,#0000008c 100%), url("./images/portada2.jpg")',
         'linear-gradient(180deg, #0000008c 0%,#0000008c 100%), url("./images/portada3.jpg")',
         'linear-gradient(180deg, #0000008c 0%,#0000008c 100%), url("./images/portada4.jpg")',
-        'linear-gradient(180deg, #0000008c 0%,#0000008c 100%), url("../images/portada.jpg")'
+        'linear-gradient(180deg, #0000008c 0%,#0000008c 100%), url("./images/portada.jpg")'
         // Agrega más valores de fondo aquí
     ];
     let currentBackgroundIndex = 0;
