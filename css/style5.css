@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ec5656;
+    color: #fff;
+    transition: background-image 0.5s;
+}
+
+.container{
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 50px;
+    max-height: 100px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+    background-color: #000; /* Color de fondo de la barra */
+    padding-top: 0%;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+}
+
+.title-bar {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    margin-bottom: 20px; /* Espacio entre título y barra de búsqueda */
+}
+
+.title-bar h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.search-bar {
+    background-color: #5c5b5b;
+    display: flex;
+    flex-direction: row; /* Coloca elementos en fila */
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    padding: 5px; /* Agregamos un poco de espacio alrededor */
+}
+
+#search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+#search-button {
+    background-color: #444;
+    border-radius: 4px;
+    border-color: #000;
+    padding: 8px;
+    margin-top: 5px; /* Espacio entre título y barra de búsqueda */
+    margin-bottom: 5px; /* Espacio entre título y barra de búsqueda */
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    width: 30%;
+    text-align: center;
+}
+
+.column h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.jugador {
+    border: 3px solid #050505;
+    padding: 10px;
+    text-align: center;
+    min-height: 150px;
+    padding-left: 40px;
+    background-color: #e43a3a;
+  }
+  
+  .imagen {
+    position: relative;
+    float: left;
+}
+  
+  .imagen img {
+    max-width: 150px;
+    max-height: 300px;
+  }
+  
+  .numero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #33333300;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 42px;
+  }
+  
+  .valor_oro {
+    position: relative;
+    top: 20px;
+    background-color: #e6c50ac7;
+    color: #ffffff;
+    font-size: 28px;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.valor_plata {
+    position: relative;
+    top: 20px;
+    background-color: #bab9b4;
+    color: #ffffff;
+    font-size: 28px;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.valor_bronce {
+    position: relative;
+    top: 20px;
+    background-color: #CD7F32;
+    color: #ffffff;
+    font-size: 28px;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+  .info {
+    margin-top: 62px;
+    padding-bottom: 0;
+  }
+  .nombre {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .subtitulo{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .encabezado-superior {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_title{
+    font-weight: 300;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.tabla {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  table {
+    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .colores {
+    background-color: #d4d4d4;
+  }
+  .ancho-numero {
+    width: 30px;
+  }
+  .ancho-nombre {
+    width: 40px;
+  }
+  .ancho-porcentaje {
+    width: 30px;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  tr {
+    background-color: #ffffff;
+  }

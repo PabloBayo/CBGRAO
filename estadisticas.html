@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Baloncesto Grao</title>
+    <link rel="shortcut icon" href="images/Grao.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img src="images/Grao.png" class="nav_favicon" style="width: 50px; height: 50px">
+                <a href="index.html" class="nav_title">Club Baloncesto Grao</a>
+            </div>
+            <ul class="nav_link nav_link--menu">
+              <li class="nav_items">
+                <a href="acercade.html" class="nav_links">El Club</a>   
+            </li>
+            <li class="nav_items">
+                <a href="senior.html" class="nav_links">Senior Autonómico</a>   
+            </li>
+            <!--<li class="nav_items">
+                <a href="noticia.html" class="nav_links">Blog</a>   
+            </li>
+            <li class="nav_items">
+                <a href="#" class="nav_links">Equipos</a>   
+            </li>-->
+            <li class="nav_items">
+                <a href="#" class="nav_links">Campus</a>   
+            </li>
+            <li class="nav_items">
+                <a href="contacto.html" class="nav_links">Contacto</a>   
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="encabezado-superior">
+        <h1>ESTADISTICAS</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button id="search-button">
+                <img src="./images/lupa.svg" alt="Buscar" class="about_icon">
+            </button>
+    </div>
+    <div id="contenido-oculto" style="display: none;">
+        <div class="container">
+            <div class="summary">
+                <div class="column">
+                    <h2 class="titulo">PUNTOS POR PARTIDO</h2>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_oro" id="valorOroPuntos"></span>
+                            <div class="imagen">
+                              <img id="imagenOroPuntos">
+                              <span class="numero" id="dorsalOroPuntos"></span>
+                            </div>
+                            <div class="info">
+                              <p class="nombre" id="nombreOroPuntos"></p>
+                              <p class="subtitulo" id="edadOroPuntos"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_plata" id="valorPlataPuntos"></span>
+                            <div class="imagen">
+                              <img id="imagenPlataPuntos">
+                              <span class="numero" id="dorsalPlataPuntos"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombrePlataPuntos"></p>
+                              <p class="subtitulo" id="edadPlataPuntos"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_bronce" id="valorBroncePuntos"></span>
+                            <div class="imagen">
+                              <img id="imagenBroncePuntos">
+                              <span class="numero" id="dorsalBroncePuntos"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombreBroncePuntos"></p>
+                              <p class="subtitulo" id="edadBroncePuntos"></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="titulo">ASISTENCIAS POR PARTIDO</h2>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_oro" id="valorOroAsistencias"></span>
+                            <div class="imagen">
+                              <img id="imagenOroAsistencias">
+                              <span class="numero" id="dorsalOroAsistencias"></span>
+                            </div>
+                            <div class="info">
+                              <p class="nombre" id="nombreOroAsistencias"></p>
+                              <p class="subtitulo" id="edadOroAsistencias"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_plata" id="valorPlataAsistencias"></span>
+                            <div class="imagen">
+                              <img id="imagenPlataAsistencias">
+                              <span class="numero" id="dorsalPlataAsistencias"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombrePlataAsistencias"></p>
+                              <p class="subtitulo" id="edadPlataAsistencias"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_bronce" id="valorBronceAsistencias"></span>
+                            <div class="imagen">
+                              <img id="imagenBronceAsistencias">
+                              <span class="numero" id="dorsalBronceAsistencias"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombreBronceAsistencias"></p>
+                              <p class="subtitulo" id="edadBronceAsistencias"></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="titulo">REBOTES POR PARTIDO</h2>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_oro" id="valorOroRebotes"></span>
+                            <div class="imagen">
+                              <img id="imagenOroRebotes">
+                              <span class="numero" id="dorsalOroRebotes"></span>
+                            </div>
+                            <div class="info">
+                              <p class="nombre" id="nombreOroRebotes"></p>
+                              <p class="subtitulo" id="edadOroRebotes"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_plata" id="valorPlataRebotes"></span>
+                            <div class="imagen">
+                              <img id="imagenPlataRebotes">
+                              <span class="numero" id="dorsalPlataRebotes"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombrePlataRebotes"></p>
+                              <p class="subtitulo" id="edadPlataRebotes"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_bronce" id="valorBronceRebotes"></span>
+                            <div class="imagen">
+                              <img id="imagenBronceRebotes">
+                              <span class="numero" id="dorsalBronceRebotes"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombreBronceRebotes"></p>
+                              <p class="subtitulo" id="edadBronceRebotes"></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="column">
+                    <h2 class="titulo">ROBOS POR PARTIDO</h2>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_oro" id="valorOroRobos"></span>
+                            <div class="imagen">
+                              <img id="imagenOroRobos">
+                              <span class="numero" id="dorsalOroRobos"></span>
+                            </div>
+                            <div class="info">
+                              <p class="nombre" id="nombreOroRobos"></p>
+                              <p class="subtitulo" id="edadOroRobos"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_plata" id="valorPlataRobos"></span>
+                            <div class="imagen">
+                              <img id="imagenPlataRobos">
+                              <span class="numero" id="dorsalPlataRobos"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombrePlataRobos"></p>
+                              <p class="subtitulo" id="edadPlataRobos"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_bronce" id="valorBronceRobos"></span>
+                            <div class="imagen">
+                              <img id="imagenBronceRobos">
+                              <span class="numero" id="dorsalBronceRobos"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombreBronceRobos"></p>
+                              <p class="subtitulo" id="edadBronceRobos"></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="titulo">TAPONES POR PARTIDO</h2>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_oro" id="valorOroTapones"></span>
+                            <div class="imagen">
+                              <img id="imagenOroTapones">
+                              <span class="numero" id="dorsalOroTapones"></span>
+                            </div>
+                            <div class="info">
+                              <p class="nombre" id="nombreOroTapones"></p>
+                              <p class="subtitulo" id="edadOroTapones"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_plata" id="valorPlataTapones"></span>
+                            <div class="imagen">
+                              <img id="imagenPlataTapones">
+                              <span class="numero" id="dorsalPlataTapones"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombrePlataTapones"></p>
+                              <p class="subtitulo" id="edadPlataTapones"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_bronce" id="valorBronceTapones"></span>
+                            <div class="imagen">
+                              <img id="imagenBronceTapones">
+                              <span class="numero" id="dorsalBronceTapones"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombreBronceTapones"></p>
+                              <p class="subtitulo" id="edadBronceTapones"></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="titulo">VALORACION</h2>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_oro" id="valorOroValoracion"></span>
+                            <div class="imagen">
+                              <img id="imagenOroValoracion">
+                              <span class="numero" id="dorsalOroValoracion"></span>
+                            </div>
+                            <div class="info">
+                              <p class="nombre" id="nombreOroValoracion"></p>
+                              <p class="subtitulo" id="edadOroValoracion"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_plata" id="valorPlataValoracion"></span>
+                            <div class="imagen">
+                              <img id="imagenPlataValoracion">
+                              <span class="numero" id="dorsalPlataValoracion"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombrePlataValoracion"></p>
+                              <p class="subtitulo" id="edadPlataValoracion"></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article class="jugador">
+                            <span class="valor_bronce" id="valorBronceValoracion"></span>
+                            <div class="imagen">
+                              <img id="imagenBronceValoracion">
+                              <span class="numero" id="dorsalBronceValoracion"></span>
+                            </div>
+                            <div class="info">
+                                <p class="nombre" id="nombreBronceValoracion"></p>
+                              <p class="subtitulo" id="edadBronceValoracion"></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabla container">
+            <h1 class="titulo">TEMPORADA</h1>
+            <table border="0" id="miTabla">
+              <tr>
+                <th class="ancho-numero">#</th>
+                <th class="ancho-nombre">Jugador</th>
+                <th class="ancho-numero">PJ</th>
+                <th class="ancho-numero">PTS</th>
+                <th class="ancho-numero">AST</th>
+                <th class="ancho-numero">REB</th>
+                <th class="ancho-numero">ROB</th>
+                <th class="ancho-numero">TAP</th>
+                <th class="ancho-numero">PER</th>
+                <th class="ancho-numero">FP</th>
+                <th class="ancho-numero">FPP</th>
+                <th class="ancho-numero">RO</th>
+                <th class="ancho-numero">RD</th>
+                <th class="ancho-numero">VAL</th>
+                <th class="ancho-porcentaje">%2PTS</th>
+                <th class="ancho-porcentaje">%3PTS</th>
+                <th class="ancho-porcentaje">%TL</th>
+                <th class="ancho-porcentaje">%TC</th>
+              </tr>
+            </table>
+          </div>
+    </div>
+    <script src="./js/buscar.js"></script>
+    <script src="./js/contrasena.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ec5656;
+    color: #ffffff;
+    transition: background-image 0.5s;
+}
+
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 50px;
+    max-height: 100px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+    background-color: #000; /* Color de fondo de la barra */
+}
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_title{
+    font-weight: 300;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.resumen {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.imagen {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.cuerpo-noticia {
+    text-align: left;
+}

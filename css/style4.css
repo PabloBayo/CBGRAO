@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ec5656;
+    color: #ffffff;
+    transition: background-image 0.5s;
+}
+
+.container{
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.submenu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #5c5b5b; /* Color de fondo de la barra */
+    padding-right: 40px; /* Agrega un padding a la derecha */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 50px;
+    max-height: 100px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+    background-color: #000; /* Color de fondo de la barra */
+}
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_title{
+    font-weight: 300;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.bloque{
+    padding-top: 80px;
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    padding-bottom: 40px;
+}
+
+.encabezado-superior {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.encabezado-inferior {
+  background-color: #151515;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.jugadores{
+    padding-bottom: 0;
+}
+.jugador {
+  border: 4px solid #000000;
+  padding: 10px;
+  text-align: center;
+  background-color: #e7e7e7;
+}
+
+.imagen {
+  position: relative;
+  display: inline-block;
+}
+
+.imagen img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.numero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0000003b;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 42px;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.nombre{
+  margin-bottom: 0;
+  color: #000;
+}
+.subtitulo{
+    margin-bottom: 0;
+    color: #000;
+}

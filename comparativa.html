@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Baloncesto Grao</title>
+    <link rel="shortcut icon" href="images/Grao.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style6.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img src="images/Grao.png" class="nav_favicon" style="width: 50px; height: 50px">
+                <a href="index.html" class="nav_title">Club Baloncesto Grao</a>
+            </div>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="acercade.html" class="nav_links">El Club</a>   
+                </li>
+                <li class="nav_items">
+                    <a href="senior.html" class="nav_links">Senior Autonómico</a>   
+                </li>
+                <!--<li class="nav_items">
+                    <a href="noticia.html" class="nav_links">Blog</a>   
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Equipos</a>   
+                </li>-->
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Campus</a>   
+                </li>
+                <li class="nav_items">
+                    <a href="contacto.html" class="nav_links">Contacto</a>   
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="encabezado-superior">
+        <h1>COMPARATIVA</h1>
+    </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button id="search-button">
+                <img src="./images/lupa.svg" alt="Buscar" class="about_icon">
+            </button>
+    </div>
+    <main>
+        <div class="texto container">
+            <div class="left">
+                <img id="imagen">
+            </div>
+            <div class="right">
+                <div class="top-row">
+                    <p class="number" id="dorsal"></p>
+                    <p class="name" id="nombre"></p>
+                </div>
+                <p class="subtitle" id="pos"></p>
+                <div class="info">
+                    <div class="column">
+                        <p>PPP</p>
+                        <p id="pts"></p>
+                    </div>
+                    <div class="column">
+                        <p>REPP</p>
+                        <p id="reb"></p>
+                    </div>
+                    <div class="column">
+                        <p>APP</p>
+                        <p id="ast"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>  
+        <div class="text-section">
+            <p id="fisico"></p>
+            <p id="edad"></p>
+            <p id="exp"></p>
+            <p id="hist"></p>
+        </div>
+        <div class="logo">
+            <img src="./images/Grao.png" alt="Logo del Equipo">
+        </div>
+        </div>
+        <div class="encabezado-superior">
+            <h1>PROMEDIOS RESPECTO COMPAÑEROS</h1>
+        </div>
+    </main>
+    <div class="bar-container">
+        <div class ="barras">
+            <div class="bar player-bar" id="PuntosJug">
+                <div class="bar-value" id="ptsjug"></div>
+            </div>
+            <div class="bar teammate-bar" id="PuntosEqu">
+                <div class="bar-value" id="ptseq"></div>
+            </div>  
+        </div>
+        <div class ="barras">
+            <div class="bar player-bar" id="RebotesJug">
+                <div class="bar-value" id="rebjug"></div>
+            </div>
+            <div class="bar teammate-bar" id="RebotesEqu">
+                <div class="bar-value" id="rebeq"></div>
+            </div>  
+        </div>
+        <div class ="barras">
+            <div class="bar player-bar" id="AsistenciasJug">
+                <div class="bar-value" id="astjug"></div>
+            </div>
+            <div class="bar teammate-bar" id="AsistenciasEqu">
+                <div class="bar-value" id="asteq"></div>
+            </div>  
+        </div>
+        <div class ="barras">
+            <div class="bar player-bar" id="LibresJug">
+                <div class="bar-value" id="libjug"></div>
+            </div>
+            <div class="bar teammate-bar" id="LibresEqu">
+                <div class="bar-value" id="libeq"></div>
+            </div>  
+        </div>
+        <div class ="barras">
+            <div class="bar player-bar" id="TriplesJug">
+                <div class="bar-value" id="trijug"></div>
+            </div>
+            <div class="bar teammate-bar" id="TriplesEqu">
+                <div class="bar-value" id="trieq"></div>
+            </div>  
+        </div>
+    </div>
+    <div class="legend">
+        <div class="legend-item">
+            <div class="color-box player-bar"></div>
+            Jugador
+        </div>
+        <div class="legend-item-ult">
+            <div class="color-box teammate-bar"></div>
+            Compañeros
+        </div>
+        <p class="puntos">PPP</p>
+        <p class="rebotes">REPP</p>
+        <p class="asistencias">APP</p>
+        <p class="libres">TL</p>
+        <p class="triples">3PT</p>
+    </div>
+    <script src="./js/cargar.js"></script>
+</body>
+</html>

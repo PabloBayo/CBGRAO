@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <style>
+        /* Estilos CSS para las miniaturas de noticias */
+        .thumbnail {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 30%;
+            float: left;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="noticiasContainer">
+        <!-- Aquí se cargarán las miniaturas de noticias -->
+    </div>
+
+    <div id="noticiaCompleta">
+        <!-- Aquí se mostrará la noticia completa -->
+    </div>
+
+    <script>
+        // Datos de ejemplo para las noticias (puedes reemplazar esto con datos reales)
+        const noticias = [
+            {
+                id: 1,
+                titulo: "Noticia 1",
+                contenido: "Contenido de la Noticia 1."
+            },
+            {
+                id: 2,
+                titulo: "Noticia 2",
+                contenido: "Contenido de la Noticia 2."
+            },
+            {
+                id: 3,
+                titulo: "Noticia 3",
+                contenido: "Contenido de la Noticia 3."
+            },
+            // Agrega más noticias aquí
+        ];
+
+        const noticiasContainer = document.getElementById("noticiasContainer");
+        const noticiaCompleta = document.getElementById("noticiaCompleta");
+
+        // Función para cargar las miniaturas de noticias
+        function cargarMiniaturas() {
+            noticiasContainer.innerHTML = "";
+            noticias.forEach((noticia) => {
+                const miniatura = document.createElement("div");
+                miniatura.classList.add("thumbnail");
+                miniatura.textContent = noticia.titulo;
+
+                miniatura.addEventListener("click", () => {
+                    mostrarNoticiaCompleta(noticia);
+                });
+
+                noticiasContainer.appendChild(miniatura);
+            });
+        }
+
+        // Función para mostrar la noticia completa
+        function mostrarNoticiaCompleta(noticia) {
+            noticiaCompleta.innerHTML = `
+                <h2>${noticia.titulo}</h2>
+                <p>${noticia.contenido}</p>
+            `;
+        }
+
+        // Cargar las miniaturas de noticias al cargar la página
+        cargarMiniaturas();
+    </script>
+</body>
+</html>
