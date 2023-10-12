@@ -508,7 +508,7 @@ body {
 
 }
 
-@media (max-width:450px){
+@media (max-width: 400px){
     .nav_title{
         font-size: 12px;
     }
