@@ -403,6 +403,7 @@ body {
 
     .nav_link--footer{
         width: 100%;
+        font-size: 16px;
         justify-content: space-evenly;
         margin: 0;
     }
@@ -489,6 +490,7 @@ body {
 
     .nav_link--footer{
         width: 100%;
+        font-size: 16px;
         justify-content: space-evenly;
         margin: 0;
     }
@@ -579,6 +581,7 @@ body {
 
     .nav_link--footer{
         width: 100%;
+        font-size: 16px;
         justify-content: space-evenly;
         margin: 0;
     }
