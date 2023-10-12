@@ -337,12 +337,12 @@ body {
 
 @media (max-width:800px){
 
-    .nav_title{
-        font-size: 20px;
+    .nav_title {
+        font-size: 2.5vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
     }
 
-    .hero_title{
-        font-size: 2.5rem;
+    .nav_link {
+        font-size: 1.8vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
     }
 
     .about_main{
@@ -419,12 +419,12 @@ body {
 }
 
 @media (max-width:600px){
-    .nav_title{
-        font-size: 16px;
+    .nav_title {
+        font-size: 2.5vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
     }
 
-    .nav_link{
-        font-size: 12px;
+    .nav_link {
+        font-size: 1.8vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
     }
 
     .hero_title{
@@ -509,12 +509,12 @@ body {
 }
 
 @media (max-width: 400px){
-    .nav_title{
-        font-size: 12px;
+    .nav_title {
+        font-size: 2.5vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
     }
 
-    .nav_link{
-        font-size: 8px;
+    .nav_link {
+        font-size: 1.8vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
     }
 
     .hero_title{
