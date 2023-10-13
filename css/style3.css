@@ -146,8 +146,8 @@ body {
 
 .testimony_container{
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    gap: 8em;
+    grid-template-columns: 3vw 1fr 3vw;
+    gap: 2em;
     align-items: center;
     padding: 0;
     padding-bottom: 50px;
@@ -398,3 +398,326 @@ iframe {
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width:800px){
+
+    .nav_title {
+        font-size: 2.5vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
+    }
+
+    .nav_link {
+        font-size: 1.8vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
+    }
+
+    .about_main{
+        gap: 2em;
+    }
+
+    .about_icons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+    .knowledge_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .knowledge_picture{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+
+    .knowledge_img{
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+    .testimony_container{
+        grid-template-columns: 3vw 1fr 3vw;
+    }
+
+    .testimony_body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+
+
+    .testimony_img{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .questions_copy{
+        width: 100%;
+    }
+
+    .footer_container{
+        flex-wrap: wrap;
+    }
+
+    .nav--footer{
+        width: 100%;
+        justify-items: center;
+    }
+
+    .nav_link--footer{
+        width: 100%;
+        font-size: 16px;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .footer_form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer_input{
+        flex: 1;
+    }
+
+    .questions__title{
+        font-size: 2.5vw;
+    }
+
+    .questions__show{
+        font-size: 2.5vw;
+    }
+
+    .about_paragraph{
+        font-size: 2.5vw;
+    }
+
+    .subtitle_black{
+        font-size: 2.5vw;
+    }
+
+    .testimony_review{
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width:600px){
+    .nav_title {
+        font-size: 2.5vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
+    }
+
+    .nav_link {
+        font-size: 1.8vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
+    }
+
+    .hero_title{
+        font-size: 2.5rem;
+    }
+
+    .about_main{
+        gap: 2em;
+    }
+
+    .about_icons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+    .knowledge_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .knowledge_picture{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+
+    .knowledge_img{
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+    .testimony_container{
+        grid-template-columns: 3vw 1fr 3vw;
+    }
+
+    .testimony_body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+
+
+    .testimony_img{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .questions_copy{
+        width: 100%;
+    }
+
+    .footer_container{
+        flex-wrap: wrap;
+    }
+
+    .nav--footer{
+        width: 100%;
+        justify-items: center;
+    }
+
+    .nav_link--footer{
+        width: 100%;
+        font-size: 16px;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .imagenes_todas{
+        gap: 4em;
+    }
+
+    .footer_form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer_input{
+        flex: 1;
+    }
+
+    .questions__title{
+        font-size: 2.5vw;
+    }
+
+    .questions__show{
+        font-size: 2.5vw;
+    }
+
+    .about_paragraph{
+        font-size: 2.5vw;
+    }
+
+    .subtitle_black{
+        font-size: 2.5vw;
+    }
+
+    .testimony_review{
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 400px){
+    .nav_title {
+        font-size: 2.5vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
+    }
+
+    .nav_link {
+        font-size: 1.8vw; /* Ajusta el tamaño de fuente en relación al ancho de la pantalla */
+    }
+
+    .hero_title{
+        font-size: 2.5rem;
+    }
+
+    .about_main{
+        gap: 2em;
+    }
+
+    .about_icons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+    .knowledge_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .knowledge_picture{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+
+    .knowledge_img{
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    .testimony_container{
+        grid-template-columns: 3vw 1fr 3vw;
+    }
+
+    .testimony_body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+
+
+    .testimony_img{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .questions_copy{
+        width: 100%;
+    }
+
+    .footer_container{
+        flex-wrap: wrap;
+    }
+
+    .nav--footer{
+        width: 100%;
+        justify-items: center;
+    }
+
+    .nav_link--footer{
+        width: 100%;
+        font-size: 16px;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .imagenes_todas{
+        gap: 4em;
+    }
+
+    .footer_form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer_input{
+        flex: 1;
+    }
+
+    .questions__title{
+        font-size: 2.5vw;
+    }
+
+    .questions__show{
+        font-size: 2.5vw;
+    }
+
+    .about_paragraph{
+        font-size: 2.5vw;
+    }
+
+    .subtitle_black{
+        font-size: 2.5vw;
+    }
+
+    .testimony_review{
+        font-size: 1.5vw;
+    }
+}
